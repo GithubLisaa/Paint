@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Applications\\Github\\Projets\\C\u002B\u002B\\Paint\\Paint\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D6DA6AEF-631D-4CF5-AEE5-3661DB93CDF7}|Paint\\Paint.vcxproj|E:\\Applications\\Github\\Projets\\C\u002B\u002B\\Paint\\Paint\\Paint\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{D6DA6AEF-631D-4CF5-AEE5-3661DB93CDF7}|Paint\\Paint.vcxproj|solutionrelative:Paint\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "E:\\Applications\\Github\\Projets\\C\u002B\u002B\\Paint\\Paint\\Paint\\main.cpp",
+              "RelativeDocumentMoniker": "Paint\\main.cpp",
+              "ToolTip": "E:\\Applications\\Github\\Projets\\C\u002B\u002B\\Paint\\Paint\\Paint\\main.cpp",
+              "RelativeToolTip": "Paint\\main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-25T22:29:54.879Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
