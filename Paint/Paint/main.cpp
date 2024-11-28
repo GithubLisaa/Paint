@@ -1,10 +1,11 @@
 #include <SFML/Graphics.hpp>
 #include <vector>
 #include <iostream>
+#include <queue>
 
 int brushR = 10;
 sf::Color couleur;
-int winsizeX = 1920;
+int winsizeX = 1919;
 int winsizeY = 1080;
 int sizebutton = 30;
 sf::Vector2i lastMousePosition(-1, -1);
@@ -32,11 +33,14 @@ sf::RectangleShape barmenu(sf::Vector2f(winsizeX, 100));
 
 sf::RectangleShape sliderbarsaizeB;
 sf::CircleShape sliderHandlesizeB(14);
+sf::CircleShape colorinfo(10);
 
 sf::RectangleShape blackcolor(sf::Vector2f(sizebutton, sizebutton));
 sf::RectangleShape redcolor(sf::Vector2f(sizebutton, sizebutton));
 sf::RectangleShape bluecolor(sf::Vector2f(sizebutton, sizebutton));
 sf::RectangleShape greencolor(sf::Vector2f(sizebutton, sizebutton));
+sf::RectangleShape whitecolor(sf::Vector2f(sizebutton, sizebutton));
+sf::RectangleShape purplecolor(sf::Vector2f(sizebutton, sizebutton));
 
 void init() {
     canvas.create(window.getSize().x, window.getSize().y, sf::Color::White);
@@ -56,6 +60,8 @@ void init() {
     sliderHandlesizeB.setFillColor(sf::Color(128, 128, 128));
     sliderHandlesizeB.setPosition(200, 36);
 
+    colorinfo.setFillColor(couleur);
+
     texte.setFont(police);
     texte.setPosition(275, 60);
     texte.setFillColor(sf::Color::Black);
@@ -64,14 +70,20 @@ void init() {
     blackcolor.setPosition(15, 17);
     blackcolor.setFillColor(sf::Color::Black);
 
-    redcolor.setPosition(15, 58);
+    whitecolor.setPosition(15, 58);
+    whitecolor.setFillColor(sf::Color::White);
+
+    redcolor.setPosition(58, 17);
     redcolor.setFillColor(sf::Color::Red);
 
-    bluecolor.setPosition(58, 17);
+    bluecolor.setPosition(58, 58);
     bluecolor.setFillColor(sf::Color::Blue);
 
-    greencolor.setPosition(58, 58);
+    greencolor.setPosition(101, 58);
     greencolor.setFillColor(sf::Color::Green);
+
+    purplecolor.setPosition(101, 17);
+    purplecolor.setFillColor(sf::Color::Magenta);
 
     Sbucket.setScale(0.10f, 0.10f);
     Sbucket.setPosition(500, 20);
@@ -82,35 +94,51 @@ void init() {
 
 void affichage() {
     window.draw(bgSprite);
+    window.draw(colorinfo);
     window.draw(barmenu);
     window.draw(Sbucket);
     window.draw(sliderbarsaizeB);
     window.draw(sliderHandlesizeB);
     window.draw(texte);
     window.draw(redcolor);
+    window.draw(whitecolor);
     window.draw(blackcolor);
     window.draw(bluecolor);
     window.draw(greencolor);
+    window.draw(purplecolor);
     window.draw(Ssave);
     window.display();
 }
 
 void checkpixels(int x, int y, sf::Color oldcolor) {
-    for (int i = -1; i <= 1; ++i) {
-        for (int j = -1; j <= 1; ++j) {
-            if (y + i >= 100 && y + i < winsizeY && x + j >= 0 && x + j < winsizeX) {
-                if (canvas.getPixel(x, y) == oldcolor) {
-                    if (canvas.getPixel(x + i, y + j) == oldcolor)
-                    {
-                        canvas.setPixel(x + i, y + j, couleur);
-                        checkpixels(x + j, y + i, oldcolor);
-                    }
-                    else {
-                        canvas.setPixel(x, y, couleur);
-                    }
-                }
-            }
-        }
+    if (oldcolor == couleur) return;
+
+    std::queue<sf::Vector2i> pixels;
+    pixels.push({ x, y });
+
+    while (!pixels.empty()) {
+        sf::Vector2i current = pixels.front();
+        pixels.pop();
+
+        int cx = current.x;
+        int cy = current.y;
+
+        // Vérifiez les limites
+        if (cx < 0 || cx >= winsizeX  || cy < 100 || cy >= winsizeY)
+            continue;
+
+        // Vérifiez la couleur cible
+        if (canvas.getPixel(cx, cy) != oldcolor)
+            continue;
+
+        // Changez la couleur
+        canvas.setPixel(cx, cy, couleur);
+
+        // Ajoutez les voisins
+        pixels.push({ cx + 1, cy });
+        pixels.push({ cx - 1, cy });
+        pixels.push({ cx, cy + 1 });
+        pixels.push({ cx, cy - 1 });
     }
 }
 
@@ -137,6 +165,8 @@ void witchbuttonpressed() {
     sf::FloatRect redcolorbutton = redcolor.getGlobalBounds();
     sf::FloatRect bluecolorbutton = bluecolor.getGlobalBounds();
     sf::FloatRect greencolorbutton = greencolor.getGlobalBounds();
+    sf::FloatRect whitecolorbutton = whitecolor.getGlobalBounds();
+    sf::FloatRect purplecolorbutton = purplecolor.getGlobalBounds();
 
     if (blackcolorbutton.contains(sf::Vector2f(positionSouris)) && button)
     {
@@ -154,6 +184,14 @@ void witchbuttonpressed() {
     {
         couleur = sf::Color::Green;
     }
+    if (purplecolorbutton.contains(sf::Vector2f(positionSouris)) && button)
+    {
+        couleur = sf::Color::Magenta;
+    }
+    if (whitecolorbutton.contains(sf::Vector2f(positionSouris)) && button)
+    {
+        couleur = sf::Color::White;
+    }
     if (bucketbutton.contains(sf::Vector2f(positionSouris)) && button || buckethold || buckethere)
     {
         buckethold = true;
@@ -162,13 +200,16 @@ void witchbuttonpressed() {
             buckethere = false;
             checkpixels(positionSouris.x, positionSouris.y, canvas.getPixel(positionSouris.x, positionSouris.y));
         }
-        /*for (int y = 0; y < canvas.getSize().y; y++)
+        /*
+        for (int y = 0; y < canvas.getSize().y; y++)
         {
             for (int x = 0; x < canvas.getSize().x; x++)
             {
                 canvas.setPixel(x, y, couleur);
+                affichage();
             }
-        }*/
+        }
+        */
     }
     if (savebutton.contains(sf::Vector2f(positionSouris)) && button && !savetrigger)
     {
@@ -274,12 +315,24 @@ int main() {
                 errase = false;
                 button = false;
                 sliderspeauto = false;
-                if (buckethold)
+                if (buckethold && event.mouseButton.button == sf::Mouse::Left)
                 {
                     buckethold = false;
                     buckethere = true;
                 }
                 savetrigger = false;
+                break;
+            case sf::Event::MouseMoved:
+                if (sf::Mouse::getPosition(window).y >= 100)
+                {
+                    colorinfo.setScale(brushR / 10.0, brushR / 10.0);
+                    colorinfo.setFillColor(couleur);
+                    colorinfo.setPosition(sf::Mouse::getPosition(window).x - brushR, sf::Mouse::getPosition(window).y - brushR);
+                }
+                else
+                {
+                    colorinfo.setScale(0, 0);
+                }
                 break;
             case sf::Event::Closed:
                 window.close();
