@@ -234,7 +234,7 @@ void witchbuttonpressed() {
     if (savebutton.contains(sf::Vector2f(positionSouris)) && button && !safetrigger)
     {
         safetrigger = true;
-        canvas.saveToFile(std::string("Saves/test.png"));
+        canvas.saveToFile(std::string("Paint_saves/test.png"));
     }
     if (slidersizeB.contains(sf::Vector2f(positionSouris)) && button || sliderspeauto)
     {

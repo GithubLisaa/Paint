@@ -116,7 +116,7 @@ E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(379,80): warning C
 E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(379,80): warning C4244:             T=int
 E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(379,80): warning C4244:         ]
   Génération de code en cours
-  1 of 239 functions ( 0.4%) were compiled, the rest were copied from previous compilation.
+  2 of 239 functions ( 0.8%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   Fin de la génération du code
