@@ -196,29 +196,36 @@ void witchbuttonpressed() {
     if (blackcolorbutton.contains(sf::Vector2f(positionSouris)) && button)
     {
         couleur = sf::Color::Black;
+        button = false;
     }
     if (redcolorbutton.contains(sf::Vector2f(positionSouris)) && button)
     {
         couleur = sf::Color::Red;
+        button = false;
     }
     if (bluecolorbutton.contains(sf::Vector2f(positionSouris)) && button)
     {
         couleur = sf::Color::Blue;
+        button = false;
     }
     if (greencolorbutton.contains(sf::Vector2f(positionSouris)) && button)
     {
         couleur = sf::Color::Green;
+        button = false;
     }
     if (purplecolorbutton.contains(sf::Vector2f(positionSouris)) && button)
     {
         couleur = sf::Color::Magenta;
+        button = false;
     }
     if (whitecolorbutton.contains(sf::Vector2f(positionSouris)) && button)
     {
         couleur = sf::Color::White;
+        button = false;
     }
     if (bucketbutton.contains(sf::Vector2f(positionSouris)) && button || buckethold || buckethere)
     {
+        button = false;
         buckethold = true;
         if (buckethere)
         {
@@ -230,6 +237,7 @@ void witchbuttonpressed() {
     }
     if (trashbutton.contains(sf::Vector2f(positionSouris)) && button && !safetrigger)
     {
+        button = false;
         safetrigger = true;
         for (int y = 0; y < canvas.getSize().y; y++)
         {
@@ -241,11 +249,13 @@ void witchbuttonpressed() {
     }
     if (savebutton.contains(sf::Vector2f(positionSouris)) && button && !safetrigger)
     {
+        button = false;
         safetrigger = true;
         canvas.saveToFile(std::string("Paint_saves/test.png"));
     }
     if (slidersizeB.contains(sf::Vector2f(positionSouris)) && button || sliderspeauto)
     {
+        button = false;
         sliderspeauto = true;
         if (slidersizeB.contains(positionSouris.x, slidersizeB.getPosition().y))
         {
@@ -280,8 +290,7 @@ void draw_erase() {
         positionSouris.y -= canvaoffsetY;
 
         if (lastMousePosition.x != -1 && lastMousePosition.y != -1) {
-            float distance = std::sqrt(std::pow(positionSouris.x - lastMousePosition.x, 2) +
-                std::pow(positionSouris.y - lastMousePosition.y, 2));
+            float distance = std::sqrt(std::pow(positionSouris.x - lastMousePosition.x, 2) + std::pow(positionSouris.y - lastMousePosition.y, 2));
             if (brushR < 10)
             {
                 dT = 0.01f;
@@ -392,11 +401,11 @@ int main() {
                         Ssight.setScale(0.09f, 0.09f);
                         if (couleur == sf::Color::Black)
                         {
-                            Ssight.setColor(sf::Color::White);
+                            Ssight.setColor(sf::Color(255, 255, 255, 100));
                         }
                         else
                         {
-                            Ssight.setColor(sf::Color::Black);
+                            Ssight.setColor(sf::Color(0, 0, 0, 200));
                         }
                         Ssight.setPosition(sf::Mouse::getPosition(window).x - (Ssight.getGlobalBounds().width * 0.5f), sf::Mouse::getPosition(window).y - (Ssight.getGlobalBounds().height * 0.5f));
                         Sbucketmouse.setScale(0, 0);

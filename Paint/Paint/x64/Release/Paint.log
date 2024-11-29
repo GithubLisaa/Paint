@@ -68,11 +68,11 @@ C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(120,40): warning 
 C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(120,26): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
 C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(154,26): warning C4018: '>=' : incompatibilité signed/unsigned
 C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(154,64): warning C4018: '>=' : incompatibilité signed/unsigned
-C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(227,69): warning C4018: '>=' : incompatibilité signed/unsigned
-C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(227,146): warning C4018: '>=' : incompatibilité signed/unsigned
-C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(234,27): warning C4018: '<' : incompatibilité signed/unsigned
-C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(236,31): warning C4018: '<' : incompatibilité signed/unsigned
-C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(250,48): warning C4244: 'argument' : conversion de 'T' en 'T', perte possible de données
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(234,69): warning C4018: '>=' : incompatibilité signed/unsigned
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(234,146): warning C4018: '>=' : incompatibilité signed/unsigned
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(242,27): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(244,31): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(260,48): warning C4244: 'argument' : conversion de 'T' en 'T', perte possible de données
           with
           [
               T=int
@@ -81,7 +81,7 @@ C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(250,48): warning 
           [
               T=float
           ]
-C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(265,137): warning C4244: 'argument' : conversion de 'T' en 'const _Ty', perte possible de données
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(275,137): warning C4244: 'argument' : conversion de 'T' en 'const _Ty', perte possible de données
           with
           [
               T=float
@@ -90,9 +90,9 @@ C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(265,137): warning
           [
               _Ty=int
           ]
-C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(283,28): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
-C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(300,46): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
-C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(313,32): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(293,28): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(309,46): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(322,32): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
   Génération de code en cours
   2 of 245 functions ( 0.8%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
