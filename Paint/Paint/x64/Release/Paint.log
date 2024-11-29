@@ -91,10 +91,10 @@ C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(265,137): warning
               _Ty=int
           ]
 C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(283,28): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
-C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(292,46): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
-C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(305,32): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(300,46): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(313,32): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
   Génération de code en cours
-  57 of 245 functions (23.3%) were compiled, the rest were copied from previous compilation.
+  2 of 245 functions ( 0.8%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   Fin de la génération du code

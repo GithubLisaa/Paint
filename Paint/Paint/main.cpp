@@ -274,7 +274,7 @@ void draw_erase() {
         if (erase) {
             couleur = sf::Color::White;
         }
-
+        float dT = 0.1f;
         sf::Vector2i positionSouris = sf::Mouse::getPosition(window);
         positionSouris.x -= canvaoffsetX;
         positionSouris.y -= canvaoffsetY;
@@ -282,8 +282,16 @@ void draw_erase() {
         if (lastMousePosition.x != -1 && lastMousePosition.y != -1) {
             float distance = std::sqrt(std::pow(positionSouris.x - lastMousePosition.x, 2) +
                 std::pow(positionSouris.y - lastMousePosition.y, 2));
+            if (brushR < 10)
+            {
+                dT = 0.01f;
+            }
+            else
+            {
+                dT = 0.1f;
+            }
 
-            for (float t = 0; t <= 1; t += 0.1f) {
+            for (float t = 0; t <= 1; t += dT) {
                 int interpolatedX = static_cast<int>(lastMousePosition.x + t * (positionSouris.x - lastMousePosition.x));
                 int interpolatedY = static_cast<int>(lastMousePosition.y + t * (positionSouris.y - lastMousePosition.y));
 
