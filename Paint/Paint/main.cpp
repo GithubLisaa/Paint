@@ -9,6 +9,8 @@ int winglobalX = sf::VideoMode::getDesktopMode().width;
 int winglobalY = sf::VideoMode::getDesktopMode().height;
 int canvasizeX = sf::VideoMode::getDesktopMode().width - 200;
 int canvasizeY = sf::VideoMode::getDesktopMode().height - 200;
+int canvaoffsetX = 100;
+int canvaoffsetY = 110;
 int sizebutton = 30;
 sf::Vector2i lastMousePosition(-1, -1);
 bool draw = false;
@@ -34,6 +36,8 @@ sf::Texture Tsave;
 sf::Sprite Ssave;
 sf::Texture paper;
 sf::Sprite bgSprite;
+sf::Texture Tsight;
+sf::Sprite Ssight;
 
 sf::Color backgroundColor = sf::Color(220, 220, 220);
 
@@ -60,6 +64,9 @@ void init() {
     Strash.setTexture(Ttrash);
     Tsave.loadFromFile("save.png");
     Ssave.setTexture(Tsave);
+    Tsight.loadFromFile("cursor.png");
+    Ssight.setTexture(Tsight);
+
     couleur = sf::Color::Black;
 
     barmenu.setFillColor(sf::Color(192, 192, 192));
@@ -110,7 +117,7 @@ void affichage() {
     window.clear(backgroundColor);
     paper.loadFromImage(canvas);
     bgSprite.setTexture(paper);
-    bgSprite.setPosition(100, 110);
+    bgSprite.setPosition(canvaoffsetX, canvaoffsetY);
     window.draw(bgSprite);
     window.draw(colorinfo);
     window.draw(barmenu);
@@ -127,6 +134,7 @@ void affichage() {
     window.draw(purplecolor);
     window.draw(Ssave);
     window.draw(Strash);
+    window.draw(Ssight);
     window.display();
 }
 
@@ -216,8 +224,8 @@ void witchbuttonpressed() {
         {
             buckethere = false;
             buckethold = false;
-            if (positionSouris.x < 100 || positionSouris.x >= canvas.getSize().x || positionSouris.y < 110 || positionSouris.y >= canvas.getSize().y) return;
-            checkpixels(positionSouris.x - 100, positionSouris.y - 110, canvas.getPixel(positionSouris.x - 100, positionSouris.y - 110));
+            if (positionSouris.x < canvaoffsetX || positionSouris.x >= canvas.getSize().x || positionSouris.y < canvaoffsetY || positionSouris.y >= canvas.getSize().y) return;
+            checkpixels(positionSouris.x - canvaoffsetX, positionSouris.y - canvaoffsetY, canvas.getPixel(positionSouris.x - canvaoffsetX, positionSouris.y - canvaoffsetY));
         }
     }
     if (trashbutton.contains(sf::Vector2f(positionSouris)) && button && !safetrigger)
@@ -268,8 +276,8 @@ void draw_erase() {
         }
 
         sf::Vector2i positionSouris = sf::Mouse::getPosition(window);
-        positionSouris.x -= 100;
-        positionSouris.y -= 110;
+        positionSouris.x -= canvaoffsetX;
+        positionSouris.y -= canvaoffsetY;
 
         if (lastMousePosition.x != -1 && lastMousePosition.y != -1) {
             float distance = std::sqrt(std::pow(positionSouris.x - lastMousePosition.x, 2) +
@@ -322,7 +330,7 @@ int main() {
         while (window.pollEvent(event)) {
             switch (event.type) {
             case sf::Event::MouseButtonPressed:
-                if (sf::Mouse::getPosition(window).y >= 110)
+                if (sf::Mouse::getPosition(window).y >= canvaoffsetY)
                 {
                     if (event.mouseButton.button == sf::Mouse::Right)
                     {
@@ -347,20 +355,22 @@ int main() {
                 safetrigger = false;
                 break;
             case sf::Event::MouseMoved:
-                if (sf::Mouse::getPosition(window).y <= 110)
+                if (sf::Mouse::getPosition(window).y <= canvaoffsetY)
                 {
                     if (buckethold)
                     {
                         window.setMouseCursorVisible(false);
-                        Sbucketmouse.setPosition(sf::Mouse::getPosition(window).x, sf::Mouse::getPosition(window).y);
+                        Sbucketmouse.setPosition(sf::Mouse::getPosition(window).x - (Sbucketmouse.getGlobalBounds().width * 0.5f), sf::Mouse::getPosition(window).y - (Sbucketmouse.getGlobalBounds().height * 0.5f));
                         Sbucketmouse.setScale(0.05f, 0.05f);
                         Sbucketmouse.setColor(couleur);
+                        Ssight.setScale(0, 0);
                     }
                     else
                     {
                         window.setMouseCursorVisible(true);
                         colorinfo.setScale(0, 0);
                         Sbucketmouse.setScale(0, 0);
+                        Ssight.setScale(0, 0);
                     }
                 }
                 else
@@ -368,15 +378,25 @@ int main() {
                     window.setMouseCursorVisible(false);
                     if (!buckethold)
                     {
-                        colorinfo.setScale(brushR / 10.0, brushR / 10.0);
+                        colorinfo.setScale(brushR / 10.0f, brushR / 10.0f);
                         colorinfo.setFillColor(couleur);
-                        colorinfo.setPosition(sf::Mouse::getPosition(window).x - brushR, sf::Mouse::getPosition(window).y - brushR);
+                        colorinfo.setPosition(sf::Mouse::getPosition(window).x - (colorinfo.getGlobalBounds().width * 0.5f), sf::Mouse::getPosition(window).y - (colorinfo.getGlobalBounds().height * 0.5f));
+                        Ssight.setScale(0.09f, 0.09f);
+                        if (couleur == sf::Color::Black)
+                        {
+                            Ssight.setColor(sf::Color::White);
+                        }
+                        else
+                        {
+                            Ssight.setColor(sf::Color::Black);
+                        }
+                        Ssight.setPosition(sf::Mouse::getPosition(window).x - (Ssight.getGlobalBounds().width * 0.5f), sf::Mouse::getPosition(window).y - (Ssight.getGlobalBounds().height * 0.5f));
                         Sbucketmouse.setScale(0, 0);
                     }
                     else
                     {
                         colorinfo.setScale(0, 0);
-                        Sbucketmouse.setPosition(sf::Mouse::getPosition(window).x, sf::Mouse::getPosition(window).y);
+                        Sbucketmouse.setPosition(sf::Mouse::getPosition(window).x - (Sbucketmouse.getGlobalBounds().width * 0.5f), sf::Mouse::getPosition(window).y - (Sbucketmouse.getGlobalBounds().height * 0.5f));
                     }
                 }
                 break;

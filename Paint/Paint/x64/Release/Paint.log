@@ -1,125 +1,101 @@
 ﻿  main.cpp
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(40,41): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(40,41): warning C4244:         with
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(40,41): warning C4244:         [
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(40,41): warning C4244:             T=float
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(40,41): warning C4244:         ]
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(46,56): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(46,56): warning C4244:         with
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(46,56): warning C4244:         [
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(46,56): warning C4244:             T=float
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(46,56): warning C4244:         ]
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(46,44): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(46,44): warning C4244:         with
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(46,44): warning C4244:         [
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(46,44): warning C4244:             T=float
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(46,44): warning C4244:         ]
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(47,54): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(47,54): warning C4244:         with
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(47,54): warning C4244:         [
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(47,54): warning C4244:             T=float
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(47,54): warning C4244:         ]
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(47,42): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(47,42): warning C4244:         with
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(47,42): warning C4244:         [
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(47,42): warning C4244:             T=float
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(47,42): warning C4244:         ]
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(48,55): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(48,55): warning C4244:         with
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(48,55): warning C4244:         [
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(48,55): warning C4244:             T=float
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(48,55): warning C4244:         ]
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(48,43): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(48,43): warning C4244:         with
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(48,43): warning C4244:         [
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(48,43): warning C4244:             T=float
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(48,43): warning C4244:         ]
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(49,56): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(49,56): warning C4244:         with
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(49,56): warning C4244:         [
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(49,56): warning C4244:             T=float
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(49,56): warning C4244:         ]
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(49,44): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(49,44): warning C4244:         with
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(49,44): warning C4244:         [
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(49,44): warning C4244:             T=float
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(49,44): warning C4244:         ]
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(50,56): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(50,56): warning C4244:         with
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(50,56): warning C4244:         [
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(50,56): warning C4244:             T=float
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(50,56): warning C4244:         ]
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(50,44): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(50,44): warning C4244:         with
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(50,44): warning C4244:         [
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(50,44): warning C4244:             T=float
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(50,44): warning C4244:         ]
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(51,57): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(51,57): warning C4244:         with
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(51,57): warning C4244:         [
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(51,57): warning C4244:             T=float
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(51,57): warning C4244:         ]
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(51,45): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(51,45): warning C4244:         with
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(51,45): warning C4244:         [
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(51,45): warning C4244:             T=float
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(51,45): warning C4244:         ]
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(146,26): warning C4018: '>=' : incompatibilité signed/unsigned
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(146,64): warning C4018: '>=' : incompatibilité signed/unsigned
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(219,60): warning C4018: '>=' : incompatibilité signed/unsigned
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(219,128): warning C4018: '>=' : incompatibilité signed/unsigned
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(226,27): warning C4018: '<' : incompatibilité signed/unsigned
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(228,31): warning C4018: '<' : incompatibilité signed/unsigned
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(242,48): warning C4244: 'argument' : conversion de 'T' en 'T', perte possible de données
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(242,48): warning C4244:         with
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(242,48): warning C4244:         [
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(242,48): warning C4244:             T=int
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(242,48): warning C4244:         ]
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(242,48): warning C4244:         and
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(242,48): warning C4244:         [
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(242,48): warning C4244:             T=float
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(242,48): warning C4244:         ]
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(257,137): warning C4244: 'argument' : conversion de 'T' en 'const _Ty', perte possible de données
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(257,137): warning C4244:         with
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(257,137): warning C4244:         [
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(257,137): warning C4244:             T=float
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(257,137): warning C4244:         ]
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(257,137): warning C4244:         and
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(257,137): warning C4244:         [
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(257,137): warning C4244:             _Ty=int
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(257,137): warning C4244:         ]
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(275,28): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(284,46): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(297,32): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(355,114): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(355,114): warning C4244:         with
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(355,114): warning C4244:         [
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(355,114): warning C4244:             T=int
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(355,114): warning C4244:         ]
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(355,80): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(355,80): warning C4244:         with
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(355,80): warning C4244:         [
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(355,80): warning C4244:             T=int
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(355,80): warning C4244:         ]
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(371,66): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(371,51): warning C4244: 'argument' : conversion de 'double' en 'float', perte possible de données
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(373,123): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(373,80): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(379,114): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(379,114): warning C4244:         with
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(379,114): warning C4244:         [
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(379,114): warning C4244:             T=int
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(379,114): warning C4244:         ]
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(379,80): warning C4244: 'argument' : conversion de 'T' en 'float', perte possible de données
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(379,80): warning C4244:         with
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(379,80): warning C4244:         [
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(379,80): warning C4244:             T=int
-E:\Applications\Github\Projets\C++\Paint\Paint\Paint\main.cpp(379,80): warning C4244:         ]
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(44,41): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(50,56): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(50,44): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(51,54): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(51,42): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(52,55): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(52,43): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(53,56): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(53,44): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(54,56): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(54,44): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(55,57): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(55,45): warning C4244: 'argument' : conversion de 'int' en 'T', perte possible de données
+          with
+          [
+              T=float
+          ]
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(120,40): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(120,26): warning C4244: 'argument' : conversion de 'int' en 'float', perte possible de données
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(154,26): warning C4018: '>=' : incompatibilité signed/unsigned
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(154,64): warning C4018: '>=' : incompatibilité signed/unsigned
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(227,69): warning C4018: '>=' : incompatibilité signed/unsigned
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(227,146): warning C4018: '>=' : incompatibilité signed/unsigned
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(234,27): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(236,31): warning C4018: '<' : incompatibilité signed/unsigned
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(250,48): warning C4244: 'argument' : conversion de 'T' en 'T', perte possible de données
+          with
+          [
+              T=int
+          ]
+          and
+          [
+              T=float
+          ]
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(265,137): warning C4244: 'argument' : conversion de 'T' en 'const _Ty', perte possible de données
+          with
+          [
+              T=float
+          ]
+          and
+          [
+              _Ty=int
+          ]
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(283,28): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(292,46): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
+C:\Users\llatrille\Documents\GitHub\Paint\Paint\Paint\main.cpp(305,32): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
   Génération de code en cours
-  2 of 239 functions ( 0.8%) were compiled, the rest were copied from previous compilation.
+  57 of 245 functions (23.3%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     0 functions had inline decision re-evaluated but remain unchanged
   Fin de la génération du code
-  Paint.vcxproj -> E:\Applications\Github\Projets\C++\Paint\Paint\x64\Release\Paint.exe
-  'pwsh.exe' n'est pas reconnu en tant que commande interne
-  ou externe, un programme exécutable ou un fichier de commandes.
+  Paint.vcxproj -> C:\Users\llatrille\Documents\GitHub\Paint\Paint\x64\Release\Paint.exe
